@@ -3,4 +3,27 @@
     list-style: none;
     margin-left: 0;
   }
+
+  &__education-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    @media only screen and (min-width: 768px) {
+      grid-template-columns: 50% 50%;
+    }
+  }
+
+  &__school-full {
+    display: none;
+    @media only screen and (min-width: 768px) {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  &__school-abbr {
+    text-align: right;
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 }

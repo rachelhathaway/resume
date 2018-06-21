@@ -46,9 +46,12 @@ const IndexPage = ({ data }) => (
     </section>
     <section className="IndexPage__education">
       <h2>Education</h2>
-      <div>
-        <div>{education.degree}</div>
-        <div>{education.school}</div>
+      <div className="IndexPage__education-wrapper">
+        <div>
+          {education.degree}, {education.date}
+        </div>
+        <div className="IndexPage__school-full">{education.school.name}</div>
+        <div className="IndexPage__school-abbr">{education.school.abbr}</div>
       </div>
     </section>
   </div>
