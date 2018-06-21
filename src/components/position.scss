@@ -6,7 +6,7 @@
 
 .Position {
   &__header {
-    @media only screen and (min-width: 480px) {
+    @media only screen and (min-width: 768px) {
       display: grid;
       grid-template-columns: 50% 50%;
     }

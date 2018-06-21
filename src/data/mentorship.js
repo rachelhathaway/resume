@@ -1,4 +1,4 @@
-export const upcoming = [
+export const future = [
   {
     title: 'Lead Mentor, Coding & Cocktails',
     org: {
