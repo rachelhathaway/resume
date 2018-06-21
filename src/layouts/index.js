@@ -10,13 +10,23 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Resume for Rachel Hathaway' },
+        { name: 'description', content: data.site.siteMetadata.description },
         {
           name: 'keywords',
-          content: 'web developer, resume, javascript, react',
+          content: 'web developer, javascript, react',
+        },
+        { name: 'og:url', content: 'TBD' },
+        { name: 'og:type', content: 'article' },
+        { name: 'og:title', content: data.site.siteMetadata.title },
+        { name: 'og:description', content: data.site.siteMetadata.description },
+        {
+          name: 'og:image',
+          content: 'https://avatars2.githubusercontent.com/u/1024066',
         },
       ]}
-    />
+    >
+      <link rel="icon" type="image/png" href="/static/beers.png" />
+    </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
     <div
       style={{

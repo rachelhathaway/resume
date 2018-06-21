@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Rachel Hathaway',
-    description: 'Web Developer',
+    title: 'Rachel Hathaway, (Mostly) Front-end Web Developer',
+    description: 'Rachel Hathaway, (Mostly) Front-end Web Developer',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: ['gatsby-plugin-react-helmet', `gatsby-plugin-sass`],
 }

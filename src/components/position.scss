@@ -1,0 +1,14 @@
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+.Position {
+  &__header {
+    @media only screen and (min-width: 480px) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }
+}

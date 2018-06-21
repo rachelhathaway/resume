@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Position = ({ title, company, term, location, bullets }) => (
-  <div>
-    <header>
+import './position.scss'
+
+const Position = ({ title, company, term, location, tech, bullets }) => (
+  <div className="Position">
+    <header className="Position__header">
       <div>
         <div>
           <strong>{title}</strong>
@@ -15,6 +17,11 @@ const Position = ({ title, company, term, location, bullets }) => (
         <div>{location}</div>
       </div>
     </header>
+    {tech && (
+      <div>
+        <em>Tech: {tech.join(', ')}</em>
+      </div>
+    )}
     <ul>{bullets.map((bullet, idx) => <li key={idx}>{bullet}</li>)}</ul>
   </div>
 )
