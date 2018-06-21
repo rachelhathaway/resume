@@ -1,8 +1,8 @@
 export const future = [
   {
-    title: 'Lead Mentor, Coding & Cocktails',
+    title: 'Lead Mentor',
     org: {
-      name: 'KCWiT',
+      name: 'Coding & Cocktails',
       link: 'http://codingandcocktails.kcwomenintech.org/',
     },
     term: 'July 2018 to September 2018',
@@ -19,12 +19,12 @@ export const future = [
 
 export const previous = [
   {
-    title: 'Mentor, Coding & Cocktails',
+    title: 'Mentor',
     org: {
-      name: 'KCWiT',
+      name: 'Coding & Cocktails',
       link: 'http://codingandcocktails.kcwomenintech.org/',
     },
-    term: '2017',
+    term: 'Monthly, 2017',
   },
   {
     title: 'Mentor',

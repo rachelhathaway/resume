@@ -24,20 +24,20 @@ const IndexPage = ({ data }) => (
     <section className="IndexPage__mentorship">
       <h2>Mentorship</h2>
       <div>
-        <h3>Future</h3>
-        <ul className="IndexPage__list">
+        <h3 className="IndexPage__mentorship-future">Future</h3>
+        <ul className="IndexPage__list IndexPage__mentorship-list">
           {future.map((mentorship, idx) => (
-            <li className="IndexPage__list-item" key={idx}>
+            <li className="IndexPage__mentorship-item" key={idx}>
               <Mentorship {...mentorship} />
             </li>
           ))}
         </ul>
       </div>
       <div>
-        <h3>Past</h3>
-        <ul className="IndexPage__list">
+        <h3 className="IndexPage__mentorship-past">Past</h3>
+        <ul className="IndexPage__list IndexPage__mentorship-list">
           {previous.map((mentorship, idx) => (
-            <li className="IndexPage__list-item" key={idx}>
+            <li className="IndexPage__mentorship-item" key={idx}>
               <Mentorship {...mentorship} />
             </li>
           ))}
