@@ -20,7 +20,10 @@ const Layout = ({
           name: 'keywords',
           content: 'web developer, javascript, react',
         },
-        { name: 'og:url', content: 'TBD' },
+        {
+          name: 'og:url',
+          content: 'https://confident-fermat-4c3207.netlify.com/',
+        },
         { name: 'og:type', content: 'article' },
         { name: 'og:title', content: siteMetadata.title },
         { name: 'og:description', content: siteMetadata.description },
