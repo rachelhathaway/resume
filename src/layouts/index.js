@@ -30,14 +30,14 @@ const Layout = ({
         {
           name: 'og:image',
           content:
-            'http://res.cloudinary.com/rachelhathaway/image/upload/c_fit,h_630,w_1200/v1447350555/hot-dogs_irwt6b.jpg',
+            'https://res.cloudinary.com/rachelhathaway/image/upload/c_fit,h_630,w_1200/v1447350555/hot-dogs_irwt6b.jpg',
         },
       ]}
     >
       <link
         rel="icon"
         type="image/png"
-        href="http://res.cloudinary.com/rachelhathaway/image/upload/v1529549644/beers_eypvrl.png"
+        href="https://res.cloudinary.com/rachelhathaway/image/upload/v1529549644/beers_eypvrl.png"
       />
     </Helmet>
     <Header

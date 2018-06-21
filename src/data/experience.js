@@ -27,7 +27,7 @@ export default [
     title: 'Web Developer',
     company: {
       name: 'mySidewalk',
-      link: 'http://mysidewalk.com/',
+      link: 'https://mysidewalk.com/',
     },
     term: 'July 2014 to August 2015',
     location: 'KCMO',
