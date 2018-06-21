@@ -5,29 +5,42 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.css'
 
-const Layout = ({ children, data }) => (
+const Layout = ({
+  children,
+  data: {
+    site: { siteMetadata },
+  },
+}) => (
   <div>
     <Helmet
-      title={data.site.siteMetadata.title}
+      title={`${siteMetadata.title} -- ${siteMetadata.description}`}
       meta={[
-        { name: 'description', content: data.site.siteMetadata.description },
+        { name: 'description', content: siteMetadata.description },
         {
           name: 'keywords',
           content: 'web developer, javascript, react',
         },
         { name: 'og:url', content: 'TBD' },
         { name: 'og:type', content: 'article' },
-        { name: 'og:title', content: data.site.siteMetadata.title },
-        { name: 'og:description', content: data.site.siteMetadata.description },
+        { name: 'og:title', content: siteMetadata.title },
+        { name: 'og:description', content: siteMetadata.description },
         {
           name: 'og:image',
-          content: 'https://avatars2.githubusercontent.com/u/1024066',
+          content:
+            'http://res.cloudinary.com/rachelhathaway/image/upload/c_fit,h_630,w_1200/v1447350555/hot-dogs_irwt6b.jpg',
         },
       ]}
     >
-      <link rel="icon" type="image/png" href="/static/beers.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        href="http://res.cloudinary.com/rachelhathaway/image/upload/v1529549644/beers_eypvrl.png"
+      />
     </Helmet>
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header
+      siteTitle={siteMetadata.title}
+      siteDescription={siteMetadata.description}
+    />
     <div
       style={{
         margin: '0 auto',

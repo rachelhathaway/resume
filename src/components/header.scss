@@ -1,0 +1,47 @@
+.Header {
+  background: #ff54af;
+  margin-bottom: 1.45rem;
+  color: white;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+    align-items: left;
+
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }
+
+  &__title {
+    font-size: 1.7rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__contact {
+    align-self: center;
+    @media only screen and (min-width: 768px) {
+      text-align: right;
+    }
+  }
+
+  &__email {
+    text-decoration: none;
+    color: white;
+  }
+
+  hr {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
