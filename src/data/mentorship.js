@@ -1,12 +1,15 @@
-export const future = [
+export const current = [
   {
     title: 'Lead Mentor',
     org: {
       name: 'Coding & Cocktails',
       link: 'https://codingandcocktails.kcwomenintech.org/',
     },
-    term: 'July 2018 to September 2018',
+    term: 'July 2018 to present',
   },
+]
+
+export const previous = [
   {
     title: 'Mentor',
     org: {
@@ -15,9 +18,6 @@ export const future = [
     },
     term: 'July 2018',
   },
-]
-
-export const previous = [
   {
     title: 'Mentor',
     org: {

@@ -5,7 +5,7 @@ import Position from '../components/position'
 
 import education from '../data/education'
 import positions from '../data/experience'
-import { future, previous } from '../data/mentorship'
+import { current, previous } from '../data/mentorship'
 
 import './index.scss'
 
@@ -24,9 +24,9 @@ const IndexPage = ({ data }) => (
     <section className="IndexPage__mentorship">
       <h2>Mentorship</h2>
       <div>
-        <h3 className="IndexPage__mentorship-future">Future</h3>
+        <h3 className="IndexPage__mentorship-future">Current</h3>
         <ul className="IndexPage__list IndexPage__mentorship-list">
-          {future.map((mentorship, idx) => (
+          {current.map((mentorship, idx) => (
             <li className="IndexPage__mentorship-item" key={idx}>
               <Mentorship {...mentorship} />
             </li>

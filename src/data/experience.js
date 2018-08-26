@@ -6,7 +6,7 @@ export default [
       abbr: 'ATM',
       link: 'https://www.apartmenttherapy.com/',
     },
-    term: 'August 2015 to present',
+    term: 'August 2015 to July 2018',
     location: 'Remote',
     bullets: [
       'Collaborate with product owners, designers, and other developers to deliver quality products, supporting millions of users across multiple sites',
