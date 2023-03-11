@@ -1,5 +1,7 @@
 ---
 import "../styles/base.css";
+
+const emailAddress = "rachel.e.hathaway@gmail.com";
 ---
 
 <html lang="en">
@@ -10,10 +12,42 @@ import "../styles/base.css";
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"
     />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
     <title>Rachel Hathaway | Front-end Software Engineer</title>
   </head>
   <body>
-    <h1>Astro</h1>
+    <header>
+      <h1>
+        <a href="https://www.linkedin.com/in/hathawayrachel/" target="_blank">
+          Rachel Hathaway
+        </a>
+      </h1>
+      <div>
+        <div>816.547.5508</div>
+        <div>
+          <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <article>
+          Experienced front-end developer with particular interest in building
+          visually consistent, performant, high-quality web applications.
+        </article>
+      </section>
+      <section>
+        <h2>Experience</h2>
+      </section>
+      <section>
+        <h2>Mentorship</h2>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <article>
+          <div>BA Studio Art, 2006</div>
+          <div>University of Missouri-Kansas City</div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
