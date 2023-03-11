@@ -4,6 +4,8 @@ import Job from "../components/Job.astro";
 import Mentorship from "../components/Mentorship.astro";
 
 const emailAddress = "rachel.e.hathaway@gmail.com";
+const summary =
+  "Experienced front-end engineer with particular interest in building visually consistent, performant, high-quality web applications.";
 ---
 
 <html lang="en">
@@ -14,6 +16,10 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"
     />
     <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content={`Rachel Hathaway, ${summary.toLowerCase()}`}
+    />
     <title>Rachel Hathaway | Front-end Software Engineer</title>
   </head>
   <body>
@@ -34,10 +40,7 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
     </header>
     <main class="px-6">
       <section>
-        <article class="-mx-6 py-6 bg-stone-100 text-center">
-          Experienced front-end engineer with particular interest in building
-          visually consistent, performant, high-quality web applications.
-        </article>
+        <article class="-mx-6 py-6 bg-stone-100 text-center">{summary}</article>
       </section>
       <section class="my-6">
         <h2>Experience</h2>
