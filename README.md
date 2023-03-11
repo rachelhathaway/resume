@@ -1,1 +1,1 @@
-Resume built with [Astro](https://docs.astro.build/en/getting-started/) and [tailwindcss](https://tailwindcss.com/docs/installation). Visit me at [rachelhathaway.com](https://www.rachelhathaway.com/).
+Resume built with [Astro](https://docs.astro.build/en/getting-started/) and [tailwindcss](https://tailwindcss.com/docs/installation), deployed with [Vercel](https://vercel.com/docs). Visit me at [rachelhathaway.com](https://www.rachelhathaway.com/).
