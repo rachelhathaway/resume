@@ -5,10 +5,12 @@ const { organization, term, title } = Astro.props;
 <article>
   <header>
     <h3>
-      {title}
+      <strong>{title}</strong>
     </h3>
     <div>
-      <a href={organization.link} target="_blank">{organization.name}</a>
+      <a class="text-fuchsia-700" href={organization.link} target="_blank"
+        >{organization.name}</a
+      >
     </div>
     <div>{term}</div>
   </header>

@@ -17,28 +17,31 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
     <title>Rachel Hathaway | Front-end Software Engineer</title>
   </head>
   <body>
-    <header>
+    <header
+      class="bg-fuchsia-800 sm:flex sm:items-end sm:justify-between p-6 text-white"
+    >
       <h1>
         <a href="https://www.linkedin.com/in/hathawayrachel" target="_blank">
           Rachel Hathaway
         </a>
       </h1>
-      <div>
+      <div class="mt-4 sm:text-right sm:mt-0">
         <div>816.547.5508</div>
         <div>
           <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
         </div>
       </div>
     </header>
-    <main>
+    <main class="px-6">
       <section>
-        <article>
+        <article class="-mx-6 py-6 bg-fuchsia-50 text-center">
           Experienced front-end engineer with particular interest in building
           visually consistent, performant, high-quality web applications.
         </article>
       </section>
-      <section>
+      <section class="my-6">
         <h2>Experience</h2>
+        <hr />
         <Job
           company={{
             name: "EquipmentShare",
@@ -61,20 +64,20 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
           term="October 2018 to present"
           title="Senior Front-end Software Engineer"
         >
-          <ul>
+          <ul class="ml-4">
             <li>
               Serve on a small, front-end platform team leading the introduction
               of tooling and solutions that address engineer and user pain
               points, with current initiatives including:
-              <ul>
+              <ul class="ml-4">
                 <li>
                   The definition and documentation of global layouts and design
                   patterns meant to establish UI consistency across our
                   user-facing applications
                 </li>
                 <li>
-                  Piloting usage of LaunchDarkly feature flags to allow for
-                  frequent code integration and iterative rollout of changes
+                  Demonstrating the usage of LaunchDarkly feature flags to allow
+                  for frequent code integration and iterative rollout of changes
                 </li>
                 <li>
                   The enhancement of our platformʼs experience related to
@@ -96,23 +99,15 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
             <li>
               Assisted with the summer 2022 internship program by being on-site
               for the interns’ initial week of onboarding, and serving as a
-              mentor to an intern for the duration of their internship
+              mentor to one intern for the duration of their internship
             </li>
             <li>
               Prior to 2023, served as a core front-end contributor to <a
+                class="text-fuchsia-700"
                 href="https://www.equipmentshare.com/digital-solutions/fleet"
                 target="_blank">Fleet</a
               >, a web application used to visualize and surface ways to act
-              upon a fleet's telemetry data; notable contributions included:
-              <ul>
-                <li>
-                  Leading of effort to introduce ElasticUI into the codebase
-                </li>
-                <li>
-                  Leading of effort to replace Redux with React Query for
-                  storage of API data
-                </li>
-              </ul>
+              upon a fleet's telemetry data
             </li>
           </ul>
         </Job>
@@ -132,18 +127,22 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
             "WordPress",
           ]}
           term="August 2015 to July 2018"
-          title="Front-end Software Engineer"
+          title="Front-end Web Developer"
         >
-          <ul>
+          <ul class="ml-4">
             <li>
               Collaborated with product owners, designers, and other developers
               to deliver and maintain features for three high-traffic web
               applications (<a
+                class="text-fuchsia-700"
                 href="https://apartmenttherapy.com"
                 target="_blank">apartmenttherapy.com</a
-              >, <a href="https://thekitchn.com" target="_blank"
-                >thekitchn.com</a
+              >, <a
+                class="text-fuchsia-700"
+                href="https://thekitchn.com"
+                target="_blank">thekitchn.com</a
               >, and <a
+                class="text-fuchsia-700"
                 href="https://marketplace.apartmenttherapy.com"
                 target="_blank">marketplace.apartmenttherapy.com</a
               >)
@@ -151,7 +150,7 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
             <li>
               Assisted with the migration and rewrite of multiple legacy code
               bases, including:
-              <ul>
+              <ul class="ml-4">
                 <li>
                   The rewrite of the The Kitchn and Apartment Therapy's
                   front-end codebase from Backbone to React
@@ -179,9 +178,9 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
           }}
           tech={["JavaScript", "AngularJS", "Python", "Django"]}
           term="July 2014 to August 2015"
-          title="Full-stack Software Engineer"
+          title="Full-stack Web Developer"
         >
-          <ul>
+          <ul class="ml-4">
             <li>
               Delivered and maintained full-stack features for two GovTech web
               applications
@@ -206,9 +205,9 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
           }}
           tech={["JavaScript", "AngularJS", "jQuery", "PHP", "WordPress"]}
           term="October 2018 to present"
-          title="Senior Software Engineer"
+          title="Full-stack Web Developer"
         >
-          <ul>
+          <ul class="ml-4">
             <li>
               Served as a full-stack developer on a variety of projects, ranging
               from HTML emails and Facebook tabs, to full development and
@@ -222,44 +221,48 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
           </ul>
         </Job>
       </section>
-      <section>
+      <section class="my-6">
         <h2>Mentorship</h2>
-        <Mentorship
-          organization={{
-            name: "Coding & Cocktails",
-            link: "https://codingandcocktails.kcwomenintech.org",
-          }}
-          term="July 2018 to December 2018"
-          title="Lead Mentor"
-        />
-        <Mentorship
-          organization={{
-            name: "Django Girls",
-            link: "https://djangogirls.org/kansascity",
-          }}
-          term="July 2018"
-          title="Mentor"
-        />
-        <Mentorship
-          organization={{
-            name: "Coding & Cocktails",
-            link: "https://codingandcocktails.kcwomenintech.org",
-          }}
-          term="Monthly, 2017"
-          title="Mentor"
-        />
-        <Mentorship
-          organization={{
-            name: "Django Girls",
-            link: "https://djangogirls.org/kansascity",
-          }}
-          term="July 2017"
-          title="Mentor"
-        />
+        <hr />
+        <div class="flex flex-wrap gap-10 mt-4">
+          <Mentorship
+            organization={{
+              name: "Coding & Cocktails",
+              link: "https://codingandcocktails.kcwomenintech.org",
+            }}
+            term="2018 Session"
+            title="Lead Mentor"
+          />
+          <Mentorship
+            organization={{
+              name: "Django Girls",
+              link: "https://djangogirls.org/kansascity",
+            }}
+            term="July 2018"
+            title="Mentor"
+          />
+          <Mentorship
+            organization={{
+              name: "Coding & Cocktails",
+              link: "https://codingandcocktails.kcwomenintech.org",
+            }}
+            term="2017 Session"
+            title="Mentor"
+          />
+          <Mentorship
+            organization={{
+              name: "Django Girls",
+              link: "https://djangogirls.org/kansascity",
+            }}
+            term="July 2017"
+            title="Mentor"
+          />
+        </div>
       </section>
-      <section>
+      <section class="my-6">
         <h2>Education</h2>
-        <article>
+        <hr />
+        <article class="my-4 flex flex-wrap items-end justify-between">
           <div>BA Studio Art, 2006</div>
           <div>University of Missouri-Kansas City</div>
         </article>
