@@ -1,0 +1,16 @@
+---
+const { organization, term, title } = Astro.props;
+---
+
+<article>
+  <header>
+    <h3>
+      {title}
+    </h3>
+    <div>
+      <a href={organization.link} target="_blank">{organization.name}</a>
+    </div>
+    <div>{term}</div>
+  </header>
+  <slot />
+</article>

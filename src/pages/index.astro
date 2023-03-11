@@ -1,5 +1,7 @@
 ---
 import "../styles/base.css";
+import Job from "../components/Job.astro";
+import Mentorship from "../components/Mentorship.astro";
 
 const emailAddress = "rachel.e.hathaway@gmail.com";
 ---
@@ -17,7 +19,7 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
   <body>
     <header>
       <h1>
-        <a href="https://www.linkedin.com/in/hathawayrachel/" target="_blank">
+        <a href="https://www.linkedin.com/in/hathawayrachel" target="_blank">
           Rachel Hathaway
         </a>
       </h1>
@@ -31,15 +33,229 @@ const emailAddress = "rachel.e.hathaway@gmail.com";
     <main>
       <section>
         <article>
-          Experienced front-end developer with particular interest in building
+          Experienced front-end engineer with particular interest in building
           visually consistent, performant, high-quality web applications.
         </article>
       </section>
       <section>
         <h2>Experience</h2>
+        <Job
+          company={{
+            name: "EquipmentShare",
+            link: "https://www.equipmentshare.com",
+          }}
+          tech={[
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "React Query",
+            "Redux",
+            "ElasticUI",
+            "Jest",
+            "React Testing Library",
+            "Cypress",
+            "Storybook",
+            "Chromatic",
+            "Webpack",
+          ]}
+          term="October 2018 to present"
+          title="Senior Front-end Software Engineer"
+        >
+          <ul>
+            <li>
+              Serve on a small, front-end platform team leading the introduction
+              of tooling and solutions that address engineer and user pain
+              points, with current initiatives including:
+              <ul>
+                <li>
+                  The definition and documentation of global layouts and design
+                  patterns meant to establish UI consistency across our
+                  user-facing applications
+                </li>
+                <li>
+                  Piloting usage of LaunchDarkly feature flags to allow for
+                  frequent code integration and iterative rollout of changes
+                </li>
+                <li>
+                  The enhancement of our platformʼs experience related to
+                  creating users in order to reduce friction, and to lessen the
+                  need for customer support
+                </li>
+              </ul>
+            </li>
+            <li>
+              Regularly initiate efforts to reduce technical debt across
+              multiple projects by consolidating internal libraries, eliminating
+              dead code, and transitioning applications and libraries to more
+              modern front-end tools
+            </li>
+            <li>
+              Participate in regular planning, grooming, and estimating of
+              engineering work
+            </li>
+            <li>
+              Assisted with the summer 2022 internship program by being on-site
+              for the interns’ initial week of onboarding, and serving as a
+              mentor to an intern for the duration of their internship
+            </li>
+            <li>
+              Prior to 2023, served as a core front-end contributor to <a
+                href="https://www.equipmentshare.com/digital-solutions/fleet"
+                target="_blank">Fleet</a
+              >, a web application used to visualize and surface ways to act
+              upon a fleet's telemetry data; notable contributions included:
+              <ul>
+                <li>
+                  Leading of effort to introduce ElasticUI into the codebase
+                </li>
+                <li>
+                  Leading of effort to replace Redux with React Query for
+                  storage of API data
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </Job>
+        <Job
+          company={{
+            name: "Apartment Therapy Media",
+            link: "https://www.apartmenttherapy.com",
+          }}
+          tech={[
+            "JavaScript",
+            "React",
+            "Redux",
+            "Jest",
+            "Enzyme",
+            "Next.js",
+            "GraphQL",
+            "WordPress",
+          ]}
+          term="August 2015 to July 2018"
+          title="Front-end Software Engineer"
+        >
+          <ul>
+            <li>
+              Collaborated with product owners, designers, and other developers
+              to deliver and maintain features for three high-traffic web
+              applications (<a
+                href="https://apartmenttherapy.com"
+                target="_blank">apartmenttherapy.com</a
+              >, <a href="https://thekitchn.com" target="_blank"
+                >thekitchn.com</a
+              >, and <a
+                href="https://marketplace.apartmenttherapy.com"
+                target="_blank">marketplace.apartmenttherapy.com</a
+              >)
+            </li>
+            <li>
+              Assisted with the migration and rewrite of multiple legacy code
+              bases, including:
+              <ul>
+                <li>
+                  The rewrite of the The Kitchn and Apartment Therapy's
+                  front-end codebase from Backbone to React
+                </li>
+                <li>
+                  The transition of the core functionality of Marketplace
+                  (acquired early 2017) to Next.js
+                </li>
+                <li>
+                  The migration of a high-touch, monolithic, custom content
+                  management system to WordPress
+                </li>
+              </ul>
+            </li>
+            <li>
+              Advocated for and promoted high-quality software by participating
+              in daily code review and ensuring adherence to team standards
+            </li>
+          </ul>
+        </Job>
+        <Job
+          company={{
+            name: "mySidewalk",
+            link: "https://mysidewalk.com",
+          }}
+          tech={["JavaScript", "AngularJS", "Python", "Django"]}
+          term="July 2014 to August 2015"
+          title="Full-stack Software Engineer"
+        >
+          <ul>
+            <li>
+              Delivered and maintained full-stack features for two GovTech web
+              applications
+            </li>
+            <li>
+              Served on the internal board, a leadership appointed group that
+              guided the direction of internal policies and procedures; topics
+              included compensation, professional growth, talent policy, and
+              culture
+            </li>
+            <li>
+              Planned and led a 24-hour course covering the basics of AngularJS;
+              lessons included preparatory reading, an outline of the day's
+              material, along with group and individual exercises
+            </li>
+          </ul>
+        </Job>
+        <Job
+          company={{
+            name: "Barkley",
+            link: "https://www.barkleyus.com",
+          }}
+          tech={["JavaScript", "AngularJS", "jQuery", "PHP", "WordPress"]}
+          term="October 2018 to present"
+          title="Senior Software Engineer"
+        >
+          <ul>
+            <li>
+              Served as a full-stack developer on a variety of projects, ranging
+              from HTML emails and Facebook tabs, to full development and
+              ongoing maintenance of larger sites
+            </li>
+            <li>
+              Worked with a broad range of clients, including Casey's General
+              Store, Krispy Kreme Doughnuts, United Missouri Bank, Dawn Foods,
+              Quizno's, and Dairy Queen
+            </li>
+          </ul>
+        </Job>
       </section>
       <section>
         <h2>Mentorship</h2>
+        <Mentorship
+          organization={{
+            name: "Coding & Cocktails",
+            link: "https://codingandcocktails.kcwomenintech.org",
+          }}
+          term="July 2018 to December 2018"
+          title="Lead Mentor"
+        />
+        <Mentorship
+          organization={{
+            name: "Django Girls",
+            link: "https://djangogirls.org/kansascity",
+          }}
+          term="July 2018"
+          title="Mentor"
+        />
+        <Mentorship
+          organization={{
+            name: "Coding & Cocktails",
+            link: "https://codingandcocktails.kcwomenintech.org",
+          }}
+          term="Monthly, 2017"
+          title="Mentor"
+        />
+        <Mentorship
+          organization={{
+            name: "Django Girls",
+            link: "https://djangogirls.org/kansascity",
+          }}
+          term="July 2017"
+          title="Mentor"
+        />
       </section>
       <section>
         <h2>Education</h2>
