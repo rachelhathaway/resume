@@ -1,0 +1,277 @@
+---
+import "../styles/base.css";
+import Job from "../components/Job.astro";
+import Mentorship from "../components/Mentorship.astro";
+
+const emailAddress = "rachel.e.hathaway@gmail.com";
+const summary =
+  "Experienced front-end engineer with particular interest in building visually consistent, performant, high-quality React + TypeScript web applications.";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content={`Rachel Hathaway, ${summary.toLowerCase()}`}
+    />
+    <title>Rachel Hathaway | Front-end Software Engineer</title>
+  </head>
+  <body>
+    <header
+      class="bg-fuchsia-800 sm:flex sm:items-end sm:justify-between p-6 text-stone-50"
+    >
+      <h1>
+        <a href="https://www.linkedin.com/in/hathawayrachel" target="_blank">
+          Rachel Hathaway
+        </a>
+      </h1>
+      <div class="mt-4 sm:text-right sm:mt-0">
+        <div>816.547.5508</div>
+        <div>
+          <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+        </div>
+      </div>
+    </header>
+    <main class="px-6">
+      <section>
+        <article class="-mx-6 p-6 bg-stone-100 sm:text-center">
+          {summary}
+        </article>
+      </section>
+      <section class="my-6">
+        <h2>Experience</h2>
+        <hr />
+        <Job
+          company={{
+            name: "EquipmentShare",
+            link: "https://www.equipmentshare.com",
+          }}
+          tech={[
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "React Query",
+            "Redux",
+            "ElasticUI",
+            "Jest",
+            "React Testing Library",
+            "Cypress",
+            "Storybook",
+            "Chromatic",
+            "Webpack",
+          ]}
+          term="October 2018 to present"
+          title="Senior Front-end Software Engineer"
+        >
+          <ul class="ml-4">
+            <li>
+              Serve on a small, front-end platform team leading the introduction
+              of tooling and solutions that address engineer and user pain
+              points, with current initiatives including:
+              <ul class="ml-4">
+                <li>
+                  The definition and documentation of global layouts and design
+                  patterns meant to establish UI consistency across our
+                  user-facing applications
+                </li>
+                <li>
+                  Demonstrating the usage of LaunchDarkly feature flags to allow
+                  for frequent code integration and iterative rollout of changes
+                </li>
+                <li>
+                  The enhancement of our platformʼs experience related to
+                  creating users in order to reduce friction, and to lessen the
+                  need for customer support
+                </li>
+              </ul>
+            </li>
+            <li>
+              Regularly initiate efforts to reduce technical debt across
+              multiple projects by consolidating internal libraries, eliminating
+              dead code, and transitioning applications and libraries to more
+              modern front-end tools
+            </li>
+            <li>
+              Participate in regular planning, grooming, and estimating of
+              engineering work
+            </li>
+            <li>
+              Assisted with the summer 2022 internship program by being on-site
+              for the interns’ initial week of onboarding, and serving as a
+              mentor to one intern for the duration of their internship
+            </li>
+            <li>
+              Prior to 2023, served as a core front-end contributor to <a
+                class="text-fuchsia-700"
+                href="https://www.equipmentshare.com/digital-solutions/fleet"
+                target="_blank">Fleet</a
+              >, a web application used to visualize and surface ways to act
+              upon a fleet's telemetry data
+            </li>
+          </ul>
+        </Job>
+        <Job
+          company={{
+            name: "Apartment Therapy Media",
+            link: "https://www.apartmenttherapy.com",
+          }}
+          tech={[
+            "JavaScript",
+            "React",
+            "Redux",
+            "Jest",
+            "Enzyme",
+            "Next.js",
+            "GraphQL",
+            "WordPress",
+          ]}
+          term="August 2015 to July 2018"
+          title="Front-end Web Developer"
+        >
+          <ul class="ml-4">
+            <li>
+              Collaborated with product owners, designers, and other developers
+              to deliver and maintain features for three high-traffic web
+              applications (<a
+                class="text-fuchsia-700"
+                href="https://apartmenttherapy.com"
+                target="_blank">apartmenttherapy.com</a
+              >, <a
+                class="text-fuchsia-700"
+                href="https://thekitchn.com"
+                target="_blank">thekitchn.com</a
+              >, and <a
+                class="text-fuchsia-700"
+                href="https://marketplace.apartmenttherapy.com"
+                target="_blank">marketplace.apartmenttherapy.com</a
+              >)
+            </li>
+            <li>
+              Assisted with the migration and rewrite of multiple legacy code
+              bases, including:
+              <ul class="ml-4">
+                <li>
+                  The rewrite of the The Kitchn and Apartment Therapy's
+                  front-end codebase from Backbone to React
+                </li>
+                <li>
+                  The transition of the core functionality of Marketplace
+                  (acquired early 2017) to Next.js
+                </li>
+                <li>
+                  The migration of a high-touch, monolithic, custom content
+                  management system to WordPress
+                </li>
+              </ul>
+            </li>
+            <li>
+              Advocated for and promoted high-quality software by participating
+              in daily code review and ensuring adherence to team standards
+            </li>
+          </ul>
+        </Job>
+        <Job
+          company={{
+            name: "mySidewalk",
+            link: "https://mysidewalk.com",
+          }}
+          tech={["JavaScript", "AngularJS", "Python", "Django"]}
+          term="July 2014 to August 2015"
+          title="Full-stack Web Developer"
+        >
+          <ul class="ml-4">
+            <li>
+              Delivered and maintained full-stack features for two GovTech web
+              applications
+            </li>
+            <li>
+              Served on the internal board, a leadership appointed group that
+              guided the direction of internal policies and procedures; topics
+              included compensation, professional growth, talent policy, and
+              culture
+            </li>
+            <li>
+              Planned and led a 24-hour course covering the basics of AngularJS;
+              lessons included preparatory reading, an outline of the day's
+              material, along with group and individual exercises
+            </li>
+          </ul>
+        </Job>
+        <Job
+          company={{
+            name: "Barkley",
+            link: "https://www.barkleyus.com",
+          }}
+          tech={["JavaScript", "AngularJS", "jQuery", "PHP", "WordPress"]}
+          term="October 2018 to present"
+          title="Full-stack Web Developer"
+        >
+          <ul class="ml-4">
+            <li>
+              Served as a full-stack developer on a variety of projects, ranging
+              from HTML emails and Facebook tabs, to full development and
+              ongoing maintenance of larger sites
+            </li>
+            <li>
+              Worked with a broad range of clients, including Casey's General
+              Store, Krispy Kreme Doughnuts, United Missouri Bank, Dawn Foods,
+              Quizno's, and Dairy Queen
+            </li>
+          </ul>
+        </Job>
+      </section>
+      <section class="my-6">
+        <h2>Mentorship</h2>
+        <hr />
+        <div class="flex flex-wrap gap-10 mt-4">
+          <Mentorship
+            organization={{
+              name: "Coding & Cocktails",
+              link: "https://codingandcocktails.kcwomenintech.org",
+            }}
+            term="2018 Session"
+            title="Lead Mentor"
+          />
+          <Mentorship
+            organization={{
+              name: "Django Girls",
+              link: "https://djangogirls.org/kansascity",
+            }}
+            term="July 2018"
+            title="Mentor"
+          />
+          <Mentorship
+            organization={{
+              name: "Coding & Cocktails",
+              link: "https://codingandcocktails.kcwomenintech.org",
+            }}
+            term="2017 Session"
+            title="Mentor"
+          />
+          <Mentorship
+            organization={{
+              name: "Django Girls",
+              link: "https://djangogirls.org/kansascity",
+            }}
+            term="July 2017"
+            title="Mentor"
+          />
+        </div>
+      </section>
+      <section class="my-6">
+        <h2>Education</h2>
+        <hr />
+        <article class="my-4 flex flex-wrap items-end justify-between">
+          <div>BA Studio Art, 2006</div>
+          <div>University of Missouri-Kansas City</div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
