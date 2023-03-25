@@ -5,7 +5,7 @@ import Mentorship from "../components/Mentorship.astro";
 
 const emailAddress = "rachel.e.hathaway@gmail.com";
 const summary =
-  "Experienced front-end engineer with particular interest in building visually consistent, performant, high-quality React + TypeScript web applications.";
+  "Experienced front-end engineer ready for a new opportunity to build visually consistent, performant, and high-quality React + TypeScript web applications.";
 ---
 
 <html lang="en">
@@ -41,7 +41,13 @@ const summary =
     <main class="px-6">
       <section>
         <article class="-mx-6 p-6 bg-stone-100 sm:text-center">
-          <p>{summary} Self-identified <a class="text-fuchsia-700" href="https://dev.to/corgibytes/developer-differences-makers-vs-menders" target="_blank">mender</a>.</p>
+          <p>
+            {summary}<br />Self-identified <a
+              class="text-fuchsia-700"
+              href="https://dev.to/corgibytes/developer-differences-makers-vs-menders"
+              target="_blank">mender</a
+            >. 🛠️
+          </p>
         </article>
       </section>
       <section class="my-6">
@@ -76,18 +82,20 @@ const summary =
               points, with current initiatives including:
               <ul class="ml-4">
                 <li>
+                  Creation of a new user management application in order to
+                  centralize and reduce friction of our user management flows,
+                  and to lessen the need for customer support related to these
+                  flows
+                </li>
+                <li>
+                  Demonstration of the usage of LaunchDarkly feature flags to
+                  allow for frequent code integration, along with fine-grained
+                  control of the release of gated changes
+                </li>
+                <li>
                   The definition and documentation of global layouts and design
                   patterns meant to establish UI consistency across our
                   user-facing applications
-                </li>
-                <li>
-                  Demonstrating the usage of LaunchDarkly feature flags to allow
-                  for frequent code integration and iterative rollout of changes
-                </li>
-                <li>
-                  The enhancement of our platformʼs experience related to
-                  creating users in order to reduce friction, and to lessen the
-                  need for customer support
                 </li>
               </ul>
             </li>
@@ -95,12 +103,28 @@ const summary =
               Regularly initiate efforts to reduce technical debt across
               multiple projects by consolidating internal libraries, eliminating
               dead code, and transitioning applications and libraries to more
-              modern front-end tools
+              modern front-end tools; some recent initiatives include:
+              <ul class="ml-4">
+                <li>
+                  Initiation of an epic to eliminate consumption of outdated,
+                  deprecated, or single-use internal front-end libraries used
+                  across our suite of web applications, with the goals of
+                  building visual consistency within and across applications,
+                  and to eliminate the need for maintenance of said libraries
+                </li>
+                <li>
+                  Reduction of one our application's bundle size by ~25%, along
+                  with the addition of a bundle analysis script to make it easy
+                  to see how our code changes are impacting the application's
+                  bundle size
+                </li>
+              </ul>
             </li>
             <li>
-              Participate in regular planning, grooming, and estimating of
-              engineering work
+              Regularly collaborate with product, design, and engineering to
+              plan, groom, and estimate engineering work
             </li>
+            <li>Participate in daily code review</li>
             <li>
               Assisted with the summer 2022 internship program by being on-site
               for the interns’ initial week of onboarding, and serving as a
@@ -153,26 +177,22 @@ const summary =
               >)
             </li>
             <li>
-              Assisted with the migration and rewrite of multiple legacy code
-              bases, including:
+              Assisted with modernization efforts of multiple legacy code bases,
+              including:
               <ul class="ml-4">
                 <li>
                   The rewrite of the The Kitchn and Apartment Therapy's
                   front-end codebase from Backbone to React
                 </li>
                 <li>
-                  The transition of the core functionality of Marketplace
-                  (acquired early 2017) to Next.js
+                  The transition of the core functionality of Marketplace to
+                  Next.js
                 </li>
                 <li>
                   The migration of a high-touch, monolithic, custom content
                   management system to WordPress
                 </li>
               </ul>
-            </li>
-            <li>
-              Advocated for and promoted high-quality software by participating
-              in daily code review and ensuring adherence to team standards
             </li>
           </ul>
         </Job>
@@ -191,7 +211,7 @@ const summary =
               applications
             </li>
             <li>
-              Served on the internal board, a leadership appointed group that
+              Served on the internal board, a leadership-appointed group that
               guided the direction of internal policies and procedures; topics
               included compensation, professional growth, talent policy, and
               culture
