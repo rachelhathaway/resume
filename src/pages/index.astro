@@ -5,7 +5,7 @@ import Mentorship from "../components/Mentorship.astro";
 
 const emailAddress = "rachel.e.hathaway@gmail.com";
 const summary =
-  "Experienced front-end engineer ready for a new opportunity to build visually consistent, performant, and high-quality React + TypeScript web applications.";
+  "Experienced front-end engineer looking for a new opportunity to build visually consistent, performant, and high-quality React + TypeScript web applications.";
 ---
 
 <html lang="en">
@@ -41,7 +41,13 @@ const summary =
     <main class="px-6">
       <section>
         <article class="-mx-6 p-6 bg-stone-100 sm:text-center">
-          <p>{summary}</p>
+          <p>
+            {summary}<br />Self-identified <a
+              class="text-fuchsia-700"
+              href="https://dev.to/corgibytes/developer-differences-makers-vs-menders"
+              target="_blank">mender</a
+            >. 🛠️
+          </p>
         </article>
       </section>
       <section class="my-6">
@@ -59,6 +65,7 @@ const summary =
             "React",
             "React Query",
             "Redux",
+            "Next.js",
             "ElasticUI",
             "Jest",
             "React Testing Library",
@@ -73,13 +80,14 @@ const summary =
           <ul class="ml-4">
             <li>
               Served on a small, front-end platform team leading the
-              introduction of tooling and solutions to address engineer and user
-              pain points, with some initiatives including:
+              introduction of tooling and solutions to address engineer and
+              end-user pain points, with some initiatives including:
               <ul class="ml-4">
                 <li>
-                  Creation of a new user management application to centralize
-                  our user management flows and lessen the need for customer
-                  support related to these flows
+                  Creation of a new application to centralize user management
+                  flows, with the goal of reducing the need for customer support
+                  due to inconsistent experiences spread across multiple
+                  applications
                 </li>
                 <li>
                   Demonstration of the usage of LaunchDarkly feature flags to
