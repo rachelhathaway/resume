@@ -7,14 +7,14 @@ const { company, location, tech, term, title } = Astro.props;
     <h3>
       <strong>{title}</strong><span class="invisible sm:visible sm:px-1">@</span
       ><a
-        class="text-fuchsia-700 block sm:inline"
+        class="text-red-600 block sm:inline"
         href={company.link}
         target="_blank">{company.name}</a
       >
     </h3>
     <div>{term}<span>, {location}</span></div>
   </header>
-  <aside class="bg-stone-100 px-6 py-2 my-2 -mx-6">
+  <aside class="bg-yellow-50 px-6 py-2 my-2 -mx-6">
     Tech: {tech.join(", ")}
   </aside>
   <slot />
